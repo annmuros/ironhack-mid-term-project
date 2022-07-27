@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- adapta contenido a la ventana de dispositivo -->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description"
+        content="Mid-term-project responsive website. Ironhack bootcamp Feb 2022. HTML, CSS, JavaSript, Git and node.js">
+    <meta name="author" content="Ana Muros">
+    <meta name="keywords" content="Ironhack, bootcamp, mid-term-project">
+    <meta name="robots" content="index">
+    <!-- <link href="/css/style-news.css" rel="stylesheet" type="text/css"> -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <script src="/js/postrequest.js" type="module" defer></script> -->
+    <!-- <script src="/js/menu-nav.js" type="module" defer></script> -->
+    <!-- <script src="/js/getrequest.js" type="module" defer></script> -->
+    <!-- TO DO.... FAVICON <link rel="shortcut icon" href="/img/favicon.png"> -->
+    <noscript>
+        <p>The page you are viewing requires the use of JavaScript for its operation. If you have intentionally disabled
+            it, please re-enable it.</p>
+    </noscript>
+    <title>Muros Mid-Term Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-section">
+            <header>
+                <div class="top-menu">
+                    <!-- web logo -->
+                    <img src="/resources/logos/circle.svg" alt="company logo" />
+                    <!-- NAV -->
+                    <!-- <img id="mostrar-menu" class="mostrar-menu" src="/resources/nav/icons8-menú.svg" width="24"
+                        height="24"> -->
+                    <div class="nav-bar">
+                        <a href="/index.html">Home</a>
+                        <a href="/page.html">The News</a>
+                        <a href="#">Services</a>
+                    </div>
+                    <!--contact button-->
+                    <button id="contact-btn" class="primary-btn" onclick="window.location.href='/contact.html'">Contact
+                        Us</button>
+                </div>
+            </header>
+        </div>
+        <!-- MAIN -->
+        <main>
+            <!--Float menu-->
+            <!-- <div class="menu-nav">
+                <button id="cerrar-menu" class="cerrar-menu" aria-label="Cerrar">
+                </button>
+                <ul>
+                    <li><a href="javascript:location.reload()">Home</a></li>
+                    <li><a href="/contact.html">Projects</a></li>
+                    <li><a href="/home.html">Services</a></li>
+                </ul>
+            </div> -->
+            <!-- HERO SECTION -->
+            <div class="hero-section">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1 class="hero-heading">Empower Your Business With Stunning Desing!</h1>
+                        <div class="hero-txt">
+                            <p>Circle is a digital design and development studio. We design and develop astonishing
+                                websites and
+                                mobile
+                                apps.</p>
+                        </div>
+                        <div class="hero-btns">
+                            <button class="primary-btn" onclick="window.location.href='/contact.html'">Get in
+                                touch</button>
+                            <button class="secondary-btn">See our work</button>
+
+                        </div>
+                    </div>
+                    <div class="hero-imgs">
+                        <img class="hero-img1" src="/resources/hero-section/card-1.png" alt="hero section photo 1"
+                            width="290" />
+                        <img class="hero-main-img" src="/resources/hero-section/hero-image.png"
+                            alt="hero section photo main" width="560" />
+                        <img class="hero-img2" src="/resources/hero-section/card-2.png" alt="hero section photo 2"
+                            width="290" />
+                    </div>
+                </div>
+            </div>
+            <!-- CLIENT LOGOS -->
+            <div class="logo-section">
+                <div class="container-logos">
+                    <!-- grid -->
+                    <div class="grid-logos">
+                        <!-- flex -->
+                        <div class="client-logo">
+                            <img src="/resources/logos/airbnb-logo.svg" alt="airbnb-logo logo" />
+                        </div>
+                        <div class="client-logo">
+                            <img src="/resources/logos/google-logo.svg" alt="google-logo logo" />
+                        </div>
+                        <div class="client-logo">
+                            <img src="/resources/logos/microsoft-logo.svg" alt="microsoft-logo logo" />
+                        </div>
+                        <div class="client-logo">
+                            <img src="/resources/logos/fedex-logo.svg" alt="fedex-logo logo" />
+                        </div>
+                        <div class="client-logo">
+                            <img src="/resources/logos/amazon-logo.svg" alt="amazon-logo logo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PROJECT SECTION -->
+            <div class="project-section">
+                <h2 class="section-heading">Recent Projects</h2>
+                <div class="card-container">
+                    <div class="card-collection">
+                        <div class="card-item">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img class="project-card-img" src="/resources/projects-img/1.jpg"
+                                        alt="project-card-img" width="340" height="225">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">Simplify</div>
+                                    <div class="description">UI Design & App development</div>
+                                    <a href="" target="blank" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img class="project-card-img" src="/resources/projects-img/2.jpg"
+                                        alt="project-card-img" width="340" height="225">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">Dashcoin</div>
+                                    <div class="description">Web development</div>
+                                    <a href="" target="blank" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-item">
+                            <div class="project-card">
+                                <div class="project-img">
+                                    <img class="project-card-img" src="/resources/projects-img/3.jpg"
+                                        alt="project-card-img" width="340" height="225">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">Vectorify</div>
+                                    <div class="description">User Experience Design</div>
+                                    <a href="" target="blank" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TESTIMONIALS -->
+            <div class="testi-section">
+                <div class="testi-container">
+                    <h2 class="testi-heading">Hear What Our Clients Have To Say</h2>
+                    <div class="testi-txt">
+                        <p>"Circle help us through every stage of our startup. We really enjoyed working with you."</p>
+                    </div>
+                    <div class="testi">
+                        <div class="testi-img">
+                        </div>
+                        <div class="testi-info">
+                            <div class="testi-name">Kristin Watson</div>
+                            <div class="testi-job">Booking.com</div>
+                        </div>
+                    </div>
+                    <div class="emoji-top-left">
+                        <img src="/resources/testi-resources/memoji-1.png" alt="emoji-1" />
+                    </div>
+                    <div class="emoji-top-right">
+                        <img src="/resources/testi-resources/memoji-2.png" alt="emoji-1" />
+                    </div>
+                    <div class="emoji-bottom-left">
+                        <img src="/resources/testi-resources/memoji-3.png" alt="emoji-1" />
+                    </div>
+                    <div class="emoji-bottom-right">
+                        <img src="/resources/testi-resources/memoji-4.png" alt="emoji-1" />
+                    </div>
+                </div>
+
+            </div>
+            <!-- OUR SERVICES -->
+            <div class="services-section">
+                <div class="services-container">
+                    <h2 class="section-heading">Our Services</h2>
+                    <div class="card-container">
+                        <div class="card-collection">
+                            <div class="card-items">
+                                <div class="service-icon1">
+                                    <img class="icons" src="/resources/service-resources/1.svg" alt="pencil icon"
+                                        width="40" height="40">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">User Interface Design</div>
+                                    <div class="description">
+                                        <p>Circle provides you with a stunning user interface design that is accessible
+                                            to
+                                            everyone.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card-items">
+                                <div class="service-icon2">
+                                    <img class="icons" src="/resources/service-resources/2.svg" alt="pencil icon"
+                                        width="40" height="40">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">User Experience Design</div>
+                                    <div class="description">
+                                        <p>Circle always focuses on delivering the best user experience to your
+                                            customers.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                            <div class="card-items">
+                                <div class="service-icon3">
+                                    <img class="icons" src="/resources/service-resources/3.svg" alt="pencil icon"
+                                        width="40" height="40">
+                                </div>
+                                <div class="card-txt">
+                                    <div class="title">Application Development</div>
+                                    <div class="description">
+                                        <p>We develop high-quality mobile and web applications using the latest
+                                            technology
+                                            stack.
+                                        </p>
+                                    </div>
+                                    <a href="#" class="link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- CTA SECTION -->
+            <div class="cta-section">
+                <div class="cta-container">
+                    <div class="cta-txt-content">
+                        <h2 class="cta-heading">Do you have any questions?</h2>
+                        <p class="cta-subtitle">Let us help you!</p>
+                    </div>
+                    <form class="cta-form" id="email-form">
+                        <div class="cta-txt-wrapper">
+                            <img class="cta-form-icon" src="/resources/cta-resources/mail.svg" alt="email envelope logo"
+                                width="30" height="30" />
+                            <input type="email" class="cta-txt-field" maxlength="256" name="email-2" data-name="Email 2"
+                                placeholder="Enter your email" id="email-2" required="">
+                        </div>
+                        <input type="submit" value="Suscribe" data-wait="Please wait..." class="primary-btn-cta">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <img src="/resources/logos/circle.svg" alt="company logo" width="100" height="30" />
+                    </div>
+                    <div class="footer-content-address">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
+                </div>
+                <div class="footer-links">
+                    <!-- GRID -->
+                    <a href="#" class="footer-link">Team</a>
+                    <a href="#" class="footer-link">Services</a>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Projects</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
