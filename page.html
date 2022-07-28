@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- adapta contenido a la ventana de dispositivo -->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description"
+        content="Mid-term-project responsive website. Ironhack bootcamp Feb 2022. HTML, CSS, JavaSript, Git and node.js">
+    <meta name="author" content="Ana Muros">
+    <meta name="keywords" content="Ironhack, bootcamp, mid-term-project">
+    <meta name="robots" content="index">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="/css/style-news.css" rel="stylesheet" type="text/css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <script src="/js/postrequest.js" type="module" defer></script> -->
+    <!-- <script src="/js/menu-nav.js" type="module" defer></script> -->
+    <script src="/js/getrequest.js" type="module" defer></script>
+    <!-- <script src="menu-nav.js" type="module" defer></script> -->
+    <!-- TO DO.... FAVICON <link rel="shortcut icon" href="/img/favicon.png"> -->
+    <noscript>
+        <p>The page you are viewing requires the use of JavaScript for its operation. If you have intentionally disabled
+            it, please re-enable it.</p>
+    </noscript>
+    <title>Muros Mid-Term Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <div class="header-section">
+            <header>
+                <div class="top-menu">
+                    <!-- web logo -->
+                    <img src="/resources/logos/circle.svg" alt="company logo" />
+                    <!-- NAV -->
+                    <div class="nav-bar">
+                        <a href="/index.html">Home</a>
+                        <a href="/page.html">The News</a>
+                        <a href="#">Services</a>
+                    </div>
+                    <!--contact button-->
+                    <button class="primary-btn" onclick="window.location.href='/contact.html'">Contact Us</button>
+                </div>
+            </header>
+        </div>
+        <main>
+            <!-- PROJECT CONTENT SECTION -->
+            <div class="page-section">
+                <div class="news-section">
+                    <div class="txt-container" id="article">
+                        <h1 id="title" class="news-Title"></h1>
+                        <p id="subtitle" class="news-Subtitle"></p>
+                    </div>
+                    <img class="article-img" src="/" alt="img from api">
+                    <p class="txt-par" id="content">
+                    </p>
+                    <a id="articleLink" class="article-Link" target="_blank" href="">Read more...</a>
+
+                    <div class="articles">
+                        <h2 class="news-heading">Science News</h2>
+                        <div class="card-container">
+                            <div id="card-template" class="news-collection">
+                                <!-- -------- INSERT TEMPLATE HERE! --------- -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA SECTION -->
+            <div class="cta-section">
+                <div class="cta-container">
+                    <div class="cta-txt-content">
+                        <h2 class="cta-heading">Do you have any questions?</h2>
+                        <p class="cta-subtitle">Let us help you!</p>
+                    </div>
+                    <form class="cta-form" id="email-form">
+                        <div class="cta-txt-wrapper">
+                            <img class="cta-form-icon" src="/resources/cta-resources/mail.svg" alt="email envelope logo"
+                                width="30" height="30" />
+                            <input type="email" class="cta-txt-field" maxlength="256" name="email-2" data-name="Email 2"
+                                placeholder="Enter your email" id="email-2" required="">
+                        </div>
+                        <input type="submit" value="Suscribe" data-wait="Please wait..." class="primary-btn-cta">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-content-logo">
+                        <img src="/resources/logos/circle.svg" alt="company logo" width="100" height="30" />
+                    </div>
+                    <div class="footer-content-address">2972 Westheimer Rd. Santa Ana, Illinois 85486</div>
+                </div>
+                <div class="footer-links">
+                    <!-- GRID -->
+                    <a href="#" class="footer-link">Team</a>
+                    <a href="#" class="footer-link">Services</a>
+                    <a href="#" class="footer-link">About Us</a>
+                    <a href="#" class="footer-link">Press</a>
+                    <a href="#" class="footer-link">Projects</a>
+                    <a href="#" class="footer-link">Privacy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <template>
+        <div class="card-item">
+            <div class="project-card">
+                <div class="project-img">
+                    <img class="project-card-img" src="/resources/projects-img/4.jpg" alt="project-card-img" width="340"
+                        height="225">
+                </div>
+                <div class="card-txt">
+                    <div class="title">Orbit</div>
+                    <div class="description">UI Design</div>
+                    <a href="" target="blank" class="link">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="project-card">
+                <div class="project-img">
+                    <img class="project-card-img" src="/resources/projects-img/5.jpg" alt="project-card-img" width="340"
+                        height="225">
+                </div>
+                <div class="card-txt">
+                    <div class="title">Purify</div>
+                    <div class="description">UX/UI Design</div>
+                    <a href="" target="blank" class="link">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="project-card">
+                <div class="project-img">
+                    <img class="project-card-img" src="/resources/projects-img/6.jpg" alt="project-card-img" width="340"
+                        height="225">
+                </div>
+                <div class="card-txt">
+                    <div class="title">CriptoPie</div>
+                    <div class="description">App Development</div>
+                    <a href="" target="blank" class="link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </template>
+
+</body>
+
+</html>
